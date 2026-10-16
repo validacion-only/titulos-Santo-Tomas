@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Certificados - Santo Tomás</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* Color de fondo ajustado al tono verde exacto de la muestra */
+            background-color: #064332; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-bg {
+            background-color: #246352; /* Color de fondo del formulario */
+        }
+        .btn-orange {
+            background-color: #ff6600; /* Color del botón naranja */
+        }
+        .btn-orange:hover {
+            background-color: #e65c00;
+        }
+        .success-bg {
+            background-color: #e6eedc; /* Color de fondo del cuadro de éxito */
+        }
+        .text-success-dark {
+            color: #3b744c; /* Color de texto del éxito */
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+
+    <!-- Encabezado y Logo -->
+    <header class="p-4 pt-6">
+        <div class="flex items-center mb-6">
+            <!-- Imagen del logo local (se eliminó el texto HTML extra porque la imagen ya lo tiene) -->
+            <img src="logosanto.png" alt="Logo Santo Tomás" class="h-16 w-auto object-contain">
+        </div>
+        
+        <h2 class="text-xl font-bold mb-6 pr-4">
+            Verificación de Certificados y Diplomas de Título y/o grado
+        </h2>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow px-4 pb-8 flex flex-col gap-4">
+        
+        <!-- Formulario -->
+        <div class="form-bg rounded-lg p-5 shadow-md">
+            <div class="mb-4">
+                <label class="block text-sm mb-1">Rut con puntos y guión.</label>
+                <input type="text" value="11349565-0" class="w-full p-2.5 rounded text-gray-800 bg-white border-none focus:ring-2 focus:ring-orange-500 outline-none" readonly>
+            </div>
+            
+            <div class="mb-1">
+                <label class="block text-sm mb-1">N° Documento</label>
+                <input type="text" value="522692542" class="w-full p-2.5 rounded text-gray-800 bg-white border-none focus:ring-2 focus:ring-orange-500 outline-none" readonly>
+            </div>
+            
+            <div class="mb-5">
+                <a href="#" class="text-sm text-gray-300 hover:text-white transition">¿Donde está el N° Documento?</a>
+            </div>
+            
+            <button class="btn-orange w-full text-white font-medium text-lg py-3 rounded shadow-sm">
+                Verificar
+            </button>
+        </div>
+
+        <!-- Resultado de Verificación -->
+        <div class="success-bg rounded-lg p-5 text-[#2c573c] shadow-md">
+            <div class="flex items-start mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <p class="font-bold text-lg leading-tight">
+                    Los datos ingresados corresponden a un certificado válido.
+                </p>
+            </div>
+            
+            <div class="space-y-1.5 text-sm md:text-base">
+                <p><span class="font-medium opacity-90">Nombre Alumno:</span>José Rigoberto Cid Conejeros</p>
+                <p><span class="font-medium opacity-90">N° Registro:</span>78027</p>
+                <p><span class="font-medium opacity-90">Título:</span>INGENIERÍA EN ELECTRICIDAD Y ELECTRÓNICA INDUSTRIAL</p>
+                <p><span class="font-medium opacity-90">Obtención Título:</span> 13 de Diciembre de 2023</p>
+                <p><span class="font-medium opacity-90">Institución:</span> Universidad Santo Tomás</p>
+                <p><span class="font-medium opacity-90">Sede:</span> (90) UST LA SERENA</p>
+                <p><span class="font-medium opacity-90">Jornada:</span> Diurna - presencial</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="mt-auto border-t border-teal-800 p-6 text-xs text-gray-400 opacity-80 space-y-1">
+        <p>Sistema Verificación de Certificados y Diplomas de Título y/o grado V 1.0</p>
+        <p>Copyright © 2017 Corporación Santo Tomás</p>
+        <p>Vicerrectoría de Procesos y Tecnologías de la Información.</p>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
